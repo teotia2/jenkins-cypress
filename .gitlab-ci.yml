@@ -6,6 +6,7 @@ cypress-tests:
   stage: test
   script:
     - npm ci
+    - npm test
     - npx cypress run
   artifacts:
     when: always
