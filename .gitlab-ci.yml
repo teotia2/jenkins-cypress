@@ -10,6 +10,6 @@ cypress-tests:
   artifacts:
     when: always
     paths:
-      - cypress/videos/
-      - cypress/screenshots/
+      - cypress/screenshots
+      - cypress/videos
     expire_in: 1 week
