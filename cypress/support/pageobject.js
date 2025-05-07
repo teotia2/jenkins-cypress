@@ -5,7 +5,7 @@ class LoginPage {
 
 
   visit() {
-    cy.visit("https://practicetestautomation.com/practice-test-login/");
+    cy.visit("https://practicetestautomation.com/practice-test-login/").should('have.text','practicetestautomation');
   }
 
   enterUsername(username) {
