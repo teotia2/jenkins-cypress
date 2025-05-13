@@ -2,7 +2,7 @@ stages:
   - test
 
 cypress-tests:
-  image: cypress/browsers:node-18.12.0-chrome-106
+  image: cypress/included:13.1.0
   stage: test
   before_script:
     - npm ci
