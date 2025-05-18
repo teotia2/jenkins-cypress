@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "cypress:fixtue":"cypress run --spec cypress/e2e/fixtue_datadriven_test/*cy.js",
-    "cypress:session":"cypress run --browser chrome --spec cypress/e2e/session/*cy.js"
+    "cypress:fixtue": "cypress run --spec cypress/e2e/fixtue_datadriven_test/*cy.js",
+    "cypress:session": "cypress run --browser chrome --spec cypress/e2e/session/*cy.js"
   },
   "keywords": [],
   "author": "",
