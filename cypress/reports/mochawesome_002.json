@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-13T12:06:59.962Z",
+    "end": "2025-05-13T12:07:17.854Z",
+    "duration": 17892,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "00f14dbd-5548-412c-b3e7-9475bd69f66b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\monday.cy.js",
+      "file": "cypress\\e2e\\monday.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "77ce565e-17c6-487f-8a86-43f7ce6e49a3",
+          "title": "this is a routine check for the prictise",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "fetch the data from the pageobject and manully skip the captcha",
+              "fullTitle": "this is a routine check for the prictise fetch the data from the pageobject and manully skip the captcha",
+              "timedOut": null,
+              "duration": 13910,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_pagetwo.default.visit();\n_pagetwo.default.Contact();\n_pagetwo.default.name(\"prashant\");\n_pagetwo.default.last(\"teotia\");\n_pagetwo.default.emailid(\"prashant@gmail.com\");\n_pagetwo.default.comments(\"none right now\");\ncy.pause();\n_pagetwo.default.submitbtn();",
+              "err": {},
+              "uuid": "0c38a4dd-719f-41e4-bc02-72385123214d",
+              "parentUUID": "77ce565e-17c6-487f-8a86-43f7ce6e49a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c38a4dd-719f-41e4-bc02-72385123214d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13910,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

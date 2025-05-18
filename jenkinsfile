@@ -1,0 +1,19 @@
+node {
+    git branch: 'main', url: 'https://gitlab.com/practise1275503/noteprocess.gitcle'
+
+    // Install Node dependencies
+    bat 'npm install'
+
+    // Install Cypress binary (important for CI)
+    bat 'npx cypress install'
+
+    // Run Cypress tests (headless)
+    bat 'npx cypress run'
+
+    // Generate HTML report (if using mochawesome)
+    bat 'npx mochawesome-merge cypress/reports/*.json > cypress/reports/output.json'
+    bat 'npx marge cypress/reports/output.json -f report -o cypress/reports/html'
+
+    // Archive test videos, screenshots & report
+    archiveArtifacts artifacts: 'cypress/screenshots/**/*.png, cypress/videos/**/*.mp4, cypress/reports/html/report.html', fingerprint: true
+}

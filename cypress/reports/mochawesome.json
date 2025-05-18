@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-05-13T12:06:38.974Z",
+    "end": "2025-05-13T12:06:53.179Z",
+    "duration": 14205,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aef78b92-b9d3-4ae0-9a6c-1be79a4fd7cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\authtest.cy.js",
+      "file": "cypress\\e2e\\authtest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "115e7ffb-02df-49fe-952a-9fd4441ff681",
+          "title": "to test the basic authentication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login the page witht he auth",
+              "fullTitle": "to test the basic authentication should login the page witht he auth",
+              "timedOut": null,
+              "duration": 10666,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://authenticationtest.com/HTTPAuth/\", {\n  auth: {\n    username: \"simpleForm@authenticationtest.com\",\n    password: \"pa$$w0rd\"\n  }\n});\ncy.contains(\"Login Success\").should(\"be.visible\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Login Success' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Login Success' but never did.\n    at Context.eval (webpack://practise--cypress/./cypress/e2e/authtest.cy.js:10:33)",
+                "diff": null
+              },
+              "uuid": "f8a63d4a-76ef-47b6-a2ff-8b0ca539d3b3",
+              "parentUUID": "115e7ffb-02df-49fe-952a-9fd4441ff681",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f8a63d4a-76ef-47b6-a2ff-8b0ca539d3b3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10666,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-05-15T07:28:14.714Z",
+    "end": "2025-05-15T07:28:26.073Z",
+    "duration": 11359,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc3d9600-d8f6-4ced-838a-dc90f478390d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\session\\sessiontest.cy.js",
+      "file": "cypress\\e2e\\session\\sessiontest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e6ab14fd-a773-40e8-a03f-563f80fcd53e",
+          "title": "to check the automatic session maintained in the test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should go to second block",
+              "fullTitle": "to check the automatic session maintained in the test should go to second block",
+              "timedOut": null,
+              "duration": 9293,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://atlas.centilytics.com/\");\ncy.contains(\"Azure-CSP\").should(\"be.visible\").click();\ncy.contains('Azure CSP Home').should('be.visible').click();\ncy.url().should('contain', '/azure-csp/azure_csp_home');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mat-input-0`, but never found it.\n\nThis error occurred while creating the session. Because the session setup failed, we failed the test.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `to check the automatic sess...`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mat-input-0`, but never found it.\n\nThis error occurred while creating the session. Because the session setup failed, we failed the test.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `to check the automatic sess...`\n    at Object.eval [as setup] (webpack://practise--cypress/./cypress/e2e/session/sessiontest.cy.js:6:31)\n    at Context.<anonymous> (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:135209:38)\n    at getRet (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:119616:20)\n    at tryCatcher (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:119627:66)\n    at Context.then (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:119878:21)\n    at wrapped (https://atlas.centilytics.com/__cypress/runner/cypress_runner.js:140155:19)",
+                "diff": null
+              },
+              "uuid": "a58901a4-eb95-401a-99d7-c8f25c34c08c",
+              "parentUUID": "e6ab14fd-a773-40e8-a03f-563f80fcd53e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a58901a4-eb95-401a-99d7-c8f25c34c08c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9293,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
